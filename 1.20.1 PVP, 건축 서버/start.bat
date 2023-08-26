@@ -19,7 +19,7 @@ echo │
 echo ┕───────────────────────────────
 
 
-set/p a=번호를 적은 후 Enter :
+set/p a=번호를 적은 후 Enter : 
 if %a%==1 goto a
 if %a%==2 goto b
 if %a%==3 goto c
@@ -44,7 +44,7 @@ echo │
 echo │ 
 echo ┕───────────────────────────────
 
-set/p a=번호를 적은 후 Enter :
+set/p a=번호를 적은 후 Enter : 
 
 if %a%==1 goto aa
 if %a%==2 goto bb
