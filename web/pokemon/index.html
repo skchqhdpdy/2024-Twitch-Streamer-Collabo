@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트위치 스트리머 콜라보 마크 모드 서버</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+</head>
+<body style="background-color: pink;">
+
+    <div id="rsm" style="text-align: center;">
+        <h1>Minecraft Version : 1.12.2</h1>
+        <h1 style="display: inline;">마크 서버 주소 : </h1>
+        <h1 id="mcaddrcopy" style="display: inline; color: rgba(0, 255, 0, 0.5);">collabo.lol  </h1>
+        <h1 style="display: inline;">  <--  클릭시 복사 가능</h1>
+        <br>
+        <br>
+        <h1 style="color: red; display: inline;">.jar 파일들을</h1>
+        <h1 style="display: inline;">.minecraft 폴더 속 mods 폴더 안에 넣으세요</h1>
+        <h1>포지는 다운하고 적용했으면 이제 걍 버리세요 ㅇㅋ?</h1>
+        <h1>설마 mods 파일에 포지 파일 넣는 사람은 없겠쥬?</h1>
+    </div>
+
+    <script>
+        const clickaddr = document.getElementById("mcaddrcopy")
+        console.log(clickaddr)
+
+        clickaddr.addEventListener("click", function() {
+            var t = document.createElement("textarea");
+            document.body.appendChild(t);
+            t.value = 'collabo.lol';
+            t.select();
+            document.execCommand('copy');
+            console.log(`Copy : ${t.value}`)
+            document.body.removeChild(t);
+            alert(`서버 주소 복사 완료!`)
+        })
+    </script>
+    
+    <div style="text-align: center;">
+        <br>
+        <img id="forge_img" width="auto" height="43" src="https://files.minecraftforge.net/static/images/logo.svg" alt="">
+        <h1 style="display: inline; margin-top: -10px;">
+            <a href="forge-1.12.2-14.23.5.2860-installer.jar" download>Forge 다운로드</a>
+        </h1>
+        <br> <br>
+    </div>
+
+    <div style="text-align: center;">
+        <br>
+        <img id="forge_img" width="auto" height="43" src="https://files.minecraftforge.net/static/images/logo.svg" alt="">
+        <h1 style="display: inline; margin-top: -10px;">
+            <a href="mods.zip" download>기본 모드 (요거는 무조건 다운로드 하시고)</a>
+        </h1>
+        <br> <br>
+    </div>
+
+    <!-- <div style="text-align: center;">
+        <br>
+        <img id="forge_img" width="auto" height="43" src="https://files.minecraftforge.net/static/images/logo.svg" alt="">
+        <h1 style="display: inline; margin-top: -10px;">
+            <a href="./mods 개인적용/extra mods.zip" download>추가 모드 (개인의 선택 이지만 쓰세요)</a>
+        </h1>
+        <br> <br>
+    </div> -->
+
+    <script>
+        function rs() {
+            let h = window.outerHeight
+            let w = window.outerWidth
+            console.log(`${w} x ${h}`)
+
+            const FDiv = document.getElementById("rsm")
+            FDiv.style.marginTop = `${h / 8}px`
+        }
+        rs()
+        window.addEventListener("resize", rs)
+    </script>
+
+
+</body>
+</html>
