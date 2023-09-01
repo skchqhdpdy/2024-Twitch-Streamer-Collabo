@@ -134,4 +134,3 @@ goto main
 
 :d
 pause
-exit
