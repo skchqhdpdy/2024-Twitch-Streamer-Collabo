@@ -11,39 +11,27 @@
 
     <div id="rsm" style="text-align: center;">
         <h1>
-            <a target="_blank" href="https://discord.com/channels/1107568623050047550/1143498341838241812">
-                ?
+            <a target="_blank" href="https://discord.collabo.lol">
                 <img class="image" width="auto" height="120" src="./img/discord.png" alt="">
-                ?
             </a>
         </h1>
         <h1>
-            <a href="pokemon/">
+            <a target="_blank" href="pokemon/">
                 포켓몬 서버
             </a>
         </h1>
         <h1>
-            <a href="pvp/">
+            <a target="_blank" href="pvp/">
                 PVP, 건축 서버
             </a>
         </h1>
+
+        <h1>
+            <a target="_blank" href="https://live.collabo.lol">
+                Live 방송 (만드는중...)
+            </a>
+        </h1>
     </div>
-
-    <script>
-        const clickaddr = document.getElementById("mcaddrcopy")
-        console.log(clickaddr)
-
-        clickaddr.addEventListener("click", function() {
-            var t = document.createElement("textarea");
-            document.body.appendChild(t);
-            t.value = 'collabo.lol';
-            t.select();
-            document.execCommand('copy');
-            console.log(`Copy : ${t.value}`)
-            document.body.removeChild(t);
-            alert(`서버 주소 복사 완료!`)
-        })
-    </script>
 
     <script>
         function rs() {
